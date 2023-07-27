@@ -1,0 +1,321 @@
+/* --------------------------------- HEADER --------------------------------- */
+
+header {
+    height: 100vh;
+    width: 100%;
+    transition: 0.6s;
+}
+.bg0 {
+    background: url(../img/header-diapo/gîte.webp) center/cover;
+}
+.bg1 {
+    background: url(../img/header-diapo/jardin-soleil.webp) center/cover;
+}
+.bg2 {
+    background: url(../img/header-diapo/chambre-mezzanine.webp) center/cover;
+}
+.bg3 {
+    background: url(../img/header-diapo/mezzanine.webp) center/cover;
+}
+.bg4 {
+    background: url(../img/header-diapo/salon.webp) center/cover;
+}
+header .header-container {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: brightness(75%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+h1 {
+    position: relative;
+    font-size: 3.3rem;
+    font-family: 'Roboto-Bold';
+    text-transform: uppercase;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: var(--colorfont1);
+}
+.header-container button {
+    font-size: 1.15rem;
+    width: 200px;
+    height: 55px;
+    background: var(--color2);
+    border-radius: 4px;
+    border: none;
+    color: var(--colorfont1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.header-container button:hover {
+    background: var(--color2hover);
+}
+
+/* -------------------------------- POSITION -------------------------------- */
+
+main {
+    padding: 90px 170px;
+    color: var(--colorfont2);
+    align-items: center;
+}
+.position h2 {
+    text-align: center;
+    font-size: 2.9rem;
+    color: var(--colorfont2);
+    text-transform: uppercase;
+    font-family: 'Roboto-bold';
+    margin-bottom: 55px;
+}
+.position-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+.position iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: 4px solid #ffaf2e46;
+}
+
+/* ------------------------------- DESCRIPTION ------------------------------ */
+
+.description-container u {
+    color: rgb(17, 17, 17);
+}
+.description-container li {
+    color: rgb(41, 39, 39);
+}
+.description-container a {
+    color: #3a3a75e5;
+}
+.description {
+    padding: 100px 0 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+.carousel-slider {
+    width: 100%;
+    height: 100%;
+}
+.carousel-button {
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: white;
+    background: #363636;
+    width: 60px;
+    height: 60px;
+    border-radius: 400px;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.carousel-button:hover {
+    background: #292929;
+}
+.arrow-right {
+    right: -20px;
+}
+.arrow-left {
+    left: -20px;
+}
+.carousel-img {
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fade 0.8s;
+}
+@keyframes fade {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.carousel-img1 {
+    background: url(../img/carousel/salle-à-manger.JPG) center/cover;
+}
+.carousel-img2 {
+    background: url(../img/carousel/cuisine.jpg) center/cover;
+}
+.carousel-img3 {
+    background: url(../img/carousel/chambre-rez-de-chausée.jpg) center/cover;
+}
+.carousel-img4 {
+    background: url(../img/carousel/salon.jpg) center/cover;
+}
+.carousel-img5 {
+    background: url(../img/carousel/salle-eau.jpg) center/cover;
+}
+.carousel-img6 {
+    background: url(../img/carousel/mezzanine.jpg) center/cover;
+}
+.carousel-img7 {
+    background: url(../img/carousel/chambre-mezzanine1.jpg) center/cover;
+}
+.carousel-img8 {
+    background: url(../img/carousel/chambre-mezzanine2.JPG) center/cover;
+}
+.carousel-img9 {
+    background: url(../img/carousel/jardin.JPG) center/cover;
+}
+.carousel-img10 {
+    background: url(../img/carousel/terrasse.JPG) center/cover;
+}
+
+/* ---------------------------------- PRICE --------------------------------- */
+
+.price-container {
+    text-align: center;
+}
+.price-container p {
+    font-family: 'Roboto-bold';
+    font-size: 2.2rem;
+}
+.price-container button {
+    margin-top: 10px;
+    font-size: 1.15rem;
+    width: 250px;
+    height: 50px;
+    background: var(--color2);
+    border-radius: 4px;
+    border: none;
+    color: var(--colorfont1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.price-container button:hover {
+    background: var(--color2hover);
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+    background: #403d39;
+    border-top: 1px solid rgba(201,159,60,1);
+    padding: 50px 65px;
+}
+.contact h5 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.834);
+}
+.contact p {
+    color: rgba(255, 255, 255, 0.703);
+}
+
+/* ---------------------------- RESPONSIVE-DESIGN --------------------------- */
+
+@media screen and (max-width : 1130px) {
+    .position-container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .description {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+}
+@media screen and (max-width : 930px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    .position h2 {
+        font-size: 2.4rem;
+    }
+    main {
+        padding: 80px 100px;
+    }
+}
+@media screen and (max-width : 720px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    .position h2 {
+        font-size: 2rem;
+    }
+    main {
+        padding: 80px 50px;
+    }
+}
+@media screen and (max-width : 625px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    .position h2 {
+        font-size: 1.75rem;
+    }
+    main {
+        padding: 80px 30px;
+    }
+}
+@media screen and (max-width : 545px) {
+    h1 {
+        font-size: 1.75rem;
+        text-align: center;
+        margin: 0 20px;
+    }
+    .price-container p {
+        font-size: 1.75rem;
+    }
+    .price-container button {
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .header-container button {
+        height: 40px;
+        width: 180px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 300px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    .price-container p {
+        font-size: 1.55rem;
+    }
+    .price-container button {
+        width: 180px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    .header-container button {
+        height: 40px;
+        width: 150px;
+        font-size: 0.9rem;
+    }
+    main {
+        padding: 70px 15px;
+    }
+}
